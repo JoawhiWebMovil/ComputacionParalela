@@ -1,3 +1,8 @@
+import sys
+import os
+sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), "..")))
+
+
 import time
 
 from Librerias.Extraccion_caracteristicas import ( vectoresCaracteristicosParalelizado )
@@ -5,7 +10,6 @@ from Librerias.Extraccion_caracteristicas import ( vectoresCaracteristicosParale
 from Librerias.Evaluacion import ( prepararDatosParaML, entrenar_y_evaluar_paralelo )
 
 from Librerias.Lectura import ( cargarClasesParalelizado )
-
 
 # Ruta del dataset local
 data_path = "Dataset"
